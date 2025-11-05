@@ -3,18 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/day-1.jpg" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>About Me - Manikandan</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Hi, I'm Manikandan</h2>
-        <p>I’m a Graphic Designer with over 5 years of professional experience, trained at Zoho Schools of Learning — Zoho’s in-house alternative to traditional college education.
+    <!-- Navigation -->
+    <nav id="navp" class="navbar navbar-expand-lg d-flex">
+        <div id="nav" class="container-fluid my-2 container">
+            <a class="navbar-brand fw-bold h2" href="#">ManiKandan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-0 ms-auto nav-parent">
+                    <a class="nav-link me-3" href="index.html#Home">Home</a>
+                    <a class="nav-link me-3" href="index.html#work">Projects</a>
+                    <a class="nav-link me-3 active" href="about.html">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            I took a non-traditional path, skipping the degree and diving straight into real-world learning inside Zoho Corporation. Over the years, I’ve created designs that are both visually striking and functionally sound — from digital campaigns to product visuals.
-            
-            Alongside design, I’ve also picked up front-end development skills at a beginner level, giving me a better understanding of how my designs translate into code. This helps me work smoothly with developers and think more holistically about user experiences.
-            
-            I'm now looking to bring my creativity, curiosity, and hands-on experience to new opportunities where design meets purpose.</p>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="profile-box bg-light p-4 rounded-3 mb-4">
+                    <div class="text-center mb-4">
+                        <img src="images/contact.png" alt="Manikandan" class="profile-image mb-3">
+                        <h3 class="h4 mb-2">Manikandan</h3>
+                        <p class="text-muted">Creative Visual Designer</p>
+                        <button class="btn btn-primary contact-toggle" data-bs-toggle="collapse" data-bs-target="#contactForm" aria-expanded="false" aria-controls="contactForm">
+                            Contact Me
+                        </button>
+                    </div>
+                    
+                    <div class="collapse" id="contactForm">
+                        <form class="contact-form mt-3">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h1 class="display-4 mb-4">Creative Visual Designer at Site24x7</h1>
+                <div class=" mb-4">
+                    <p>I'm a Creative Visual Designer at Zoho Corporation, specializing in the marketing and brand storytelling for Site24x7. My core focus is on driving engagement and growth through high-impact visuals. I transform technical features into compelling campaigns, designing everything from blog banners, social media posters, and infographics to web collateral that speaks directly to our audience.</p>
+                </div>
+
+                <div class=" mb-5">
+                    <p>My unique foundation comes from the Zoho Schools of Learning, which instilled in me not just design principles, but a deep, practical understanding of the software industry. This means I can quickly translate complex product ideas into clear, marketable, and visually stunning assets.</p>
+                    <p>I love bridging the gap between engineering excellence and beautiful communication. Take a look at how I help make Site24x7 stand out!</p>
+                </div>
+
+                <div class="bg-light p-4 rounded-3">
+                    <h2 class="h3 mb-4">Key Strengths</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">🎨 <strong>Marketing Focus:</strong> Posters, banners, and blog visuals</li>
+                        <li class="mb-3">💫 <strong>Impact:</strong> High-impact campaigns and brand storytelling</li>
+                        <li class="mb-3">🎓 <strong>Unique Background:</strong> Zoho Schools of Learning — product-minded design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
